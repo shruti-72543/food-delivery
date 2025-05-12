@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>FOODIEFLY</h1>
+
+  <section class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-item">
+      <img src="images/burger.jpeg" alt="Burger">
+      <h3>Burger</h3>
+      <p>Delicious beef burger with cheese - ₹120</p>
+      <button onclick="addToCart('Burger', 120)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/pizza.jpeg" alt="Pizza">
+      <h3>Pizza</h3>
+      <p>Cheesy pepperoni pizza - ₹150</p>
+      <button onclick="addToCart('Pizza', 150)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/fries.jpeg" alt="Fries">
+      <h3>Fries</h3>
+      <p>Crispy golden fries - ₹90</p>
+      <button onclick="addToCart('Fries', 90)">Add to Cart</button>
+    </div>
+
+    <p id="cart-total">Total: ₹0</p>
+    <button id="pay-button">Pay Now</button>
+    <p id="payment-message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
